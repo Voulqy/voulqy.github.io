@@ -82,5 +82,18 @@ body, html {
 	overflow-x:auto;
 }
 
+.tabcon {
+	color: white;
+	display: none;
+	padding:  .1px 5px;
+	height: auto;
+	width: auto;
+	display: block;
+	position: relative;
+	max-width: auto;
+	overflow-y: hidden;
+	overflow-x:auto;
+}
+
 #Home {background-color: #0d0d0d;}
 #News {background-color: #0d0d0d;}
