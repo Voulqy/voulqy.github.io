@@ -19,11 +19,16 @@ padding: 0px;
 
 .land
 {
-display: inline-block;
-margin: 0px;
-padding:  0px;
-margin-left: auto;
-  margin-right: auto;
+	color: white;
+	display: none;
+	padding:  .1px 5px !important;
+	height: auto;
+	width: auto;
+	display: block;
+	position: relative;
+	max-width: auto;
+	overflow-y: hidden;
+	overflow-x:auto;
 
 }
 
