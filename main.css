@@ -17,6 +17,15 @@ margin: 0px;
 padding: 0px;
 }
 
+.land
+{
+display: inline-block;
+margin: 0px;
+padding: 0px;
+width: 480px;
+height: auto;
+}
+
 #content
 {
 display: block;
