@@ -62,7 +62,7 @@ body, html {
 .tabcontent {
 	color: white;
 	display: none;
-	padding:  .1px .1px;
+	padding:  .1px 25px;
 	height: auto;
 	width: auto;
 	display: block;
