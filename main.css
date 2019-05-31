@@ -36,6 +36,7 @@ overflow-x:auto;
 /* Set height of body and the document to 100% */
 body, html {
   height: 100%;
+  width: auto;
   margin: 0;
   font-family: Arial;
 }
@@ -63,7 +64,7 @@ body, html {
 	display: none;
 	padding: 1px 35px;
 	height: auto;
-
+	width: auto;
 	display: block;
 	position: relative;
 	max-width: auto;
