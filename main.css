@@ -21,9 +21,9 @@ padding: 0px;
 {
 display: inline-block;
 margin: 0px;
-padding: 0px;
-width: 300px;
-height: auto;
+padding:  0px;
+margin-left: auto;
+  margin-right: auto;
 
 }
 
