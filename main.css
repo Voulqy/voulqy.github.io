@@ -18,12 +18,26 @@ a:link, a:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  width: 93%;
+  width: 90%;
 }
 
 a:hover, a:active {
   background-color: red;
 }
+
+
+
+
+
+
+
+
+/* .images */
+/* { */
+/* display: inline-block; */
+/* margin: 0px; */
+/* padding: 0px; */
+/* } */
 
 .images
 {
@@ -41,3 +55,60 @@ a:hover, a:active {
 
 
 
+/* #content */
+/* { */
+/* display: block; */
+/* margin: 0px; */
+/* padding: 0px; */
+/* position: relative; */
+/* top: 90px; */
+/* height: auto; */
+/* max-width: auto; */
+/* overflow-y: hidden; */
+/* overflow-x:auto; */
+/* } */
+
+/* <style> */
+/* * {box-sizing: border-box} */
+
+/* Set height of body and the document to 100% */
+/* body, html { */
+  /* height: 100%; */
+  /* width: auto; */
+  /* margin: 0; */
+  /* font-family: Arial; */
+/* } */
+
+/* Style tab links */
+/* .tablink { */
+  /* background-color: #555; */
+  /* color: white; */
+  /* float: left; */
+  /* border: none; */
+  /* outline: none; */
+  /* cursor: pointer; */
+  /* padding: 14px 16px; */
+  /* font-size: 17px; */
+  /* width: 100%; */
+/* } */
+
+/* .tablink:hover { */
+  /* background-color: #777; */
+/* } */
+
+/* Style the tab content (and add height:100% for full page content) */
+/* .tabcontent { */
+	/* color: white; */
+	/* display: none; */
+	/* padding:  .1px 5px; */
+	/* height: auto; */
+	/* width: auto; */
+	/* display: block; */
+	/* position: relative; */
+	/* max-width: auto; */
+	/* overflow-y: hidden; */
+	/* overflow-x:auto; */
+/* } */
+
+/* #Home {background-color: #0d0d0d;} */
+/* #News {background-color: #0d0d0d;} */
