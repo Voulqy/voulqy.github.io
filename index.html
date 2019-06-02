@@ -5,58 +5,41 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.94">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <title>Untitled Document</title>
+
 
 </head>
 
 <body>
 
-<div class="btn-group">
-  <a style="text-decoration:none" href="Characters/Nami.html" target="_self"><button>Brook</button></a>
-  <a style="text-decoration:none" href="Characters/Nami.html" target="_self"><button>Chopper</button></a>
-  <a style="text-decoration:none" href="Characters/Nami.html" target="_self"><button>Franky</button></a>
-  <a style="text-decoration:none" href="Characters/Nami.html" target="_self"><button>Jinbe</button></a>
-  <a style="text-decoration:none" href="Characters/Nami.html" target="_self"><button>Luffy</button></a>
-  <a style="text-decoration:none" href="Characters/Nami.html" target="_self"><button>Nami</button></a>
-  <a style="text-decoration:none" href="Characters/Nami.html" target="_self"><button>Robin</button></a>
-  <a style="text-decoration:none" href="Characters/Nami.html" target="_self"><button>Sanji</button></a>
-  <a style="text-decoration:none" href="Characters/Nami.html" target="_self"><button>Usopp</button></a>
-  <a style="text-decoration:none" href="Characters/Nami.html" target="_self"><button>Zoro</button></a>
-</div>
-
-<!-- <div class="dropdown">
-  <img src="Assets/Portrait/character_0001_t1.png" alt="Cinque Terre">
-  <div class="dropdown-content">
-  <img src="Assets/Art/character_10825_c1.png" alt="Cinque Terre">
-  <div class="desc">#0001</div>
-  </div>
-</div> -->
-
-<!--    ------------------------------------>
-
-<img id="myImg" src="Assets/Art/character_10825_c1.png" alt="Snow" style="width:100%;max-width:300px">
+  <img class="myImg" src="Assets/Art/character_0001_c1.png" alt="0001" style="width:100%;max-width:300px">
+  <img class="myImg" src="Assets/Art/character_0002_c1.png" alt="0002" style="width:100%;max-width:300px">
+  <img class="myImg" src="Assets/Art/character_0003_c1.png" alt="0003" style="width:100%;max-width:300px">
+  <img class="myImg" src="Assets/Art/character_0004_c1.png" alt="0004" style="width:100%;max-width:300px">
+  <img class="myImg" src="Assets/Art/character_0005_c1.png" alt="0005" style="width:100%;max-width:300px">
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span> <!-- The Close Button -->
+  <img class="modal-content" id="img01"> <!-- Modal Content (The Image) -->
+  <div id="caption"></div><!-- Modal Caption (Image Text) -->
 </div>
 
 <script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
+  var modal = document.getElementById("myModal");// Get the modal
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+  var img = $('.myImg');
+  var modalImg = $("#img01");
+  var captionText = document.getElementById("caption");
+  $('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -66,11 +49,6 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 </script>
-
-
-
-
-
 
 </body>
 </html>
