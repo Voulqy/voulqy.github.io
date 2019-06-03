@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-body {background-color: #0d0d0d;}
+body {background-color: #fff;}
 
 .center {
   display: block;
@@ -9,68 +9,6 @@ body {background-color: #0d0d0d;}
   margin-right: auto;
   /*width: 50%;*/
 }
-
-
-.images
-{
-	color: white;
-	display: none;
-	padding:  .1px .1px;
-	height: auto;
-	width: auto;
-	display: block;
-	position: auto;
-	max-width: auto;
-	overflow-y: hidden;
-	overflow-x:auto;
-}
-
-
-.btn-group button {
-  background-color: #0d0d0d; /* Green background */
-  border: 1px solid gray; /* Green border */
-  color: white; /* White text */
-  padding: 10px 24px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  width: 50%; /* Set a width if needed */
-  display: block; /* Make the buttons appear below each other */
-  font-size: 20px;
-}
-
-.btn-group button:not(:last-child) {
-  border-bottom: none; /* Prevent double borders */
-}
-
-/* Add a background color on hover */
-.btn-group button:hover {
-  background-color: #0b0b0b;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: relative;
-  background-color: #0d0d0d;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px #4d4d4d;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.desc {
-  padding: 15px;
-  text-align: center;
-  color: white;
-}
-
-
 
 
 
@@ -83,6 +21,9 @@ body {background-color: #0d0d0d;}
    border-radius: 5px;
    cursor: pointer;
    transition: 0.3s;
+      /* border-right: : 2px solid #4d4d4d; */
+      width:100%;
+      max-width:300px;
 }
 
 .myImg:hover {opacity: 0.7;}
@@ -112,14 +53,19 @@ body {background-color: #0d0d0d;}
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
+    font-family: "Courier New", Times, serif;
    margin: auto;
    display: block;
-   width: 80%;
-   max-width: 700px;
+   width: 90%;
+   max-width: auto;
    text-align: center;
    color: #ccc;
-   padding: 10px 0;
-   height: 150px;
+   font-size: 32px;
+   padding: 1px 0;
+   height: auto;
+   /* background-color: #ffffff; */
+   /* border: 5px solid #4CAF50; */
+   border-top: 2px solid #4d4d4d;
 }
 
 /* Add Animation - Zoom in the Modal */
