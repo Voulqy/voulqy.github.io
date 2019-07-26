@@ -3,6 +3,13 @@
 
 body {background-color: #fff;}
 
+b {
+  color: black;
+  font-size: 15px;
+  font-family: "Courier New", Times, serif;
+ padding-left: 50%;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -61,12 +68,12 @@ transform: scale(1.1);}
    max-width: auto;
    text-align: center;
    color: #ccc;
-   font-size: 32px;
+   font-size: 18px;
    padding: 1px 0;
    height: auto;
    /* background-color: #ffffff; */
    /* border: 5px solid #4CAF50; */
-   border-top: 2px solid #4d4d4d;
+   /* border-top: 2px solid #4d4d4d; */
 }
 
 /* Add Animation - Zoom in the Modal */
