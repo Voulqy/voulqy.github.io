@@ -31,6 +31,22 @@ h1 {
     text-align: center;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    max-width: 640px;
+}
+
+.container {
+    position: relative;
+}
+
+.gallery {
+    display: none;
+}
+
 /*slider switch css */
 .theme-switch-wrapper {
     display: flex;
@@ -80,8 +96,7 @@ h1 {
 }
 
 input:checked+.slider {
-    background-color: #ca0000;
-    /* background-color: #66bb6a; */
+    background-color: #66bb6a;
 }
 
 input:checked+.slider:before {
@@ -96,21 +111,23 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
+/*slider switch css */
+
+/*Media queries*/
 @media only screen and (min-width: 375px) {
     .theme-switch-wrapper {
-
         left: 89%;
-
     }
 }
 
 @media only screen and (min-width: 812px) {
     .theme-switch-wrapper {
-
         left: 94%;
-
     }
+
 }
+
+/*Media queries*/
 
 
 
