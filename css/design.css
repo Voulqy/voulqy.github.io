@@ -1,0 +1,235 @@
+:root {
+    --html: #181818;
+    --p: #ffffff;
+    --h1: #FE0065;
+    --h4: #FE0065;
+    --statbox1: #FE0065;
+}
+
+[data-theme="dark"] {
+    --html: #9A97F3;
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+}
+
+
+
+
+
+
+html {
+    background-color: var(--html);
+}
+
+h1 {
+    color: var(--h1);
+}
+
+/*slider switch css */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 5px;
+    left: 93%;
+
+}
+
+.theme-switch-wrapper em {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 17px;
+    position: relative;
+    width: 30px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 2px;
+    content: "";
+    height: 13px;
+    left: 2px;
+    position: absolute;
+    transition: .4s;
+    width: 13px;
+}
+
+input:checked+.slider {
+    background-color: #66bb6a;
+}
+
+input:checked+.slider:before {
+    transform: translateX(13px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 750px) {
+    .theme-switch-wrapper {
+
+        left: 96%;
+
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .theme-switch-wrapper {
+
+        left: 97%;
+
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .theme-switch-wrapper {
+
+        left: 97%;
+
+    }
+}
+
+
+/* 
+Class: html
+Type: background
+RGB: rgb(24, 24, 24)
+HEX: #181818
+
+Class: h1
+Type: color
+RGB: rgb(254, 0, 101)
+HEX: #FE0065
+
+Class: p
+Type: color
+RGB: rgb(255, 255, 255)
+HEX: #ffffff
+
+Class: .description
+Type: color
+RGB: rgb(255, 255, 255)
+HEX: #ffffff
+
+Class: .description ep
+Type: color
+RGB: rgb(254, 0, 101)
+HEX: #FE0065
+
+Class: .description qt
+Type: color
+RGB: rgb(255, 255, 255)
+HEX: #ffffff
+
+Class: .description qt::before, qt::after
+Type: color
+RGB: rgb(254, 0, 101)
+HEX: #FE0065
+
+Class: hr
+Type: border-top
+RGB: rgb(10, 10, 10) 
+HEX: #0a0a0a
+
+Class: h4
+Type: background
+RGB: rgb(223, 0, 89) 
+HEX: #df0059
+
+Class: .grid-container
+Type: background
+RGB: rgb(24, 24, 24)
+HEX: #181818
+
+Class: .box2
+Type: color
+RGB: rgb(255, 255, 255)
+HEX: #ffffff
+
+Class: .box4
+Type: background
+RGB: rgb(43, 43, 43)
+HEX: #2b2b2b
+
+Class: .stats
+Type: color
+RGB: rgb(128, 128, 128)
+HEX: #808080
+
+Class: .fa
+Type: color
+RGB: rgb(255, 255, 255)
+HEX: #ffffff
+
+Class: .stat_box1
+Type: color
+RGB: rgb(255, 255, 255)
+HEX: #ffffff
+
+Class: .stat_box1
+Type: background
+RGB: rgb(223, 0, 89)
+HEX: #df0059
+
+Class: .stat_box2
+Type: border-bottom
+RGB: rgb(43, 43, 43)
+HEX: #2b2b2b
+
+Class: .stat_box2
+Type: color
+RGB: rgb(255, 255, 255)
+HEX: #ffffff
+
+Class: .stat_box2
+Type: border-left
+RGB: rgb(43, 43, 43)
+HEX: #2b2b2b
+
+Class: .stat_box3
+Type: border-bottom
+RGB: rgb(43, 43, 43)
+HEX: #2b2b2b
+
+Class: .stat_box3
+Type: border-right
+RGB: rgb(43, 43, 43)
+HEX: #2b2b2b
+
+Class: .stat_box3
+Type: color
+RGB: rgb(255, 255, 255)
+HEX: #ffffff
+
+Class: .info noselect
+Type: color
+RGB: rgb(128, 128, 128)
+HEX: #808080
+*/
