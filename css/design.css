@@ -303,10 +303,14 @@ input:checked+.slider:before {
         grid-column: 1/4;
         grid-row: 2/5;
         grid-auto-rows: auto;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .box4 {
         grid-column: 1/5;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .stats {
@@ -325,6 +329,7 @@ input:checked+.slider:before {
     .stat_box3 {
         grid-column: 2/4;
     }
+
 }
 
 /*Media queries*/
