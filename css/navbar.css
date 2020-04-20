@@ -1,0 +1,146 @@
+:root {
+  --html: #ffffff;
+  --p: #ffffff;
+  --h1: #fe0065;
+  --h4: #fe0065;
+  --font: #000000;
+  --statbox1: #fe0065;
+  --h4-font: #ffffff;
+  --border-color: #c4c4c4;
+  --nav: #000000;
+}
+
+[data-theme="dark"] {
+  --html: #181818;
+  --bg-color: #181818;
+  --font: #ffffff;
+  --statbox1: #fe0065;
+  --h4-font: #ffffff;
+  --border-color: #2b2b2b;
+  --nav: #ffffff;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #363636;
+}
+
+.alpha {
+  color: var(--statbox1) !important;
+  background-color: #181818;
+}
+
+.alpha:hover {
+  background-color: #181818 !important;
+  user-select: none;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 3.5%;
+  font-size: 36px;
+  /* margin-left: 50%; */
+  text-align: center;
+  width: 250px;
+  padding-right: 10px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--nav);
+  padding-top: 0;
+  padding-left: 4px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #4b4b4b;
+  background-color: #4b4b4b;
+  /* color: white !important; */
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: block;
+  /* background-color: red; */
+}
+
+.alphalink {
+  background-color: #111;
+}
+
+#myMenu li a:hover {
+  background-color: #181818;
+}

@@ -34,6 +34,17 @@ h1 {
     text-align: center;
 }
 
+h1 #index {
+    color: #FE0065;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    text-align: center;
+}
+
 h4 {
     margin: 0;
     font-size: 1em;
@@ -209,7 +220,7 @@ qt::after {
     display: flex;
     align-items: center;
     position: absolute;
-    top: 12px;
+    top: 17px;
     left: 90%;
 
 }
@@ -338,7 +349,25 @@ input:checked+.slider:before {
 
 /*Media queries*/
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 
 /* 
