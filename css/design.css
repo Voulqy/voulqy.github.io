@@ -96,6 +96,10 @@ qt::after {
     font-family: 'Coustard', serif;
 }
 
+.stat_box3 ex {
+    color: #FE0065;
+}
+
 .description qt::before {
     content: open-quote;
 
@@ -127,10 +131,9 @@ qt::after {
     padding-top: 0;
 }
 
-.desc {
-    /* padding-left: 6px; */
-    /* padding-right: 6px; */
-}
+/* .desc {
+
+} */
 
 .box2 h4,
 .box4 h4 {
@@ -151,7 +154,7 @@ qt::after {
 /*Stats grid*/
 .stats {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 31px auto 1fr;
     text-align: left;
     font-size: .9em;
@@ -160,7 +163,7 @@ qt::after {
 }
 
 .stat_box1 {
-    grid-column: 1/5;
+    grid-column: 1/6;
     text-align: center;
     background-color: var(--statbox1);
     font-weight: bold;
@@ -184,7 +187,7 @@ qt::after {
 }
 
 .stat_box3 {
-    grid-column: 3/5;
+    grid-column: 3/6;
     border-bottom: 2px solid var(--border-color);
     border-right: 2px solid var(--border-color);
     text-align: left;
@@ -192,6 +195,7 @@ qt::after {
     padding-left: 10px;
     padding-bottom: 8px;
     vertical-align: middle;
+    hyphens: auto;
 
 }
 
