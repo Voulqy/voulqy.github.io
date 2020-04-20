@@ -35,9 +35,9 @@ h1 {
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
-    position: relative;
-    top: 5px;
-    left: 93%;
+    position: absolute;
+    top: 12px;
+    left: 90%;
 
 }
 
@@ -98,26 +98,20 @@ input:checked+.slider:before {
 @media only screen and (min-width: 375px) {
     .theme-switch-wrapper {
 
-        left: 90%;
+        left: 89%;
 
     }
 }
 
-@media only screen and (min-width: 1250px) {
+@media only screen and (min-width: 812px) {
     .theme-switch-wrapper {
 
-        left: 97%;
+        left: 94%;
 
     }
 }
 
-@media only screen and (min-width: 1500px) {
-    .theme-switch-wrapper {
 
-        left: 97%;
-
-    }
-}
 
 
 /* 
