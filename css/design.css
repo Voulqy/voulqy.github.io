@@ -80,7 +80,8 @@ h1 {
 }
 
 input:checked+.slider {
-    background-color: #66bb6a;
+    background-color: #ca0000;
+    /* background-color: #66bb6a; */
 }
 
 input:checked+.slider:before {
