@@ -3,7 +3,10 @@
     --p: #ffffff;
     --h1: #FE0065;
     --h4: #FE0065;
+    --font: #000000;
     --statbox1: #FE0065;
+    --h4-font: #ffffff;
+    --border-color: #c4c4c4;
 }
 
 [data-theme="dark"] {
@@ -11,6 +14,8 @@
     --bg-color: #181818;
     --font: #ffffff;
     --statbox1: #FE0065;
+    --h4-font: #ffffff;
+    --border-color: #2b2b2b;
 }
 
 
@@ -20,14 +25,26 @@
 
 html {
     background-color: var(--html);
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
     color: var(--h1);
-    font-family: 'Roboto', sans-serif;
     font-size: 3em;
     text-align: center;
 }
+
+h4 {
+    margin: 0;
+    font-size: 1em;
+    background-color: var(--statbox1);
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 
 img {
     display: block;
@@ -86,6 +103,47 @@ qt::after {
     content: close-quote;
 }
 
+.box2 {
+    grid-row: 3/5;
+    grid-auto-rows: auto;
+    text-align: justify;
+    color: var(--font);
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1em;
+    padding-top: 0;
+}
+
+.box4 {
+    grid-row: 5;
+    grid-auto-rows: auto;
+    text-align: justify;
+    color: var(--font);
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1em;
+    padding-top: 0;
+}
+
+.desc {
+    /* padding-left: 6px; */
+    /* padding-right: 6px; */
+}
+
+.box2 h4,
+.box4 h4 {
+    text-align: center;
+    color: var(--h4-font);
+}
+
+.noselect {
+    user-select: none;
+    /* vertical-align: bottom;
+    color: grey;
+    font-size: .8em !important;
+    font-weight: bold; */
+}
+
 /*Grid container */
 
 /*Stats grid*/
@@ -95,7 +153,7 @@ qt::after {
     grid-template-rows: 31px auto 1fr;
     text-align: left;
     font-size: .9em;
-    color: white;
+    color: var(--font);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -106,16 +164,17 @@ qt::after {
     font-weight: bold;
     padding-top: 8px;
     padding-bottom: 8px;
+    color: var(--h4-font);
 }
 
 .stat_box2 {
     grid-column: 1/3;
-    border-bottom: 2px solid #2b2b2b;
+    border-bottom: 2px solid var(--border-color);
     text-align: left;
     font-weight: bold;
     padding-top: 8px;
     padding-left: 8px;
-    border-left: 2px solid #2b2b2b;
+    border-left: 2px solid var(--border-color);
     font-size: 1.2em;
     max-height: 200px;
     padding-bottom: 8px;
@@ -124,22 +183,14 @@ qt::after {
 
 .stat_box3 {
     grid-column: 3/5;
-    border-bottom: 2px solid #2b2b2b;
-    border-right: 2px solid #2b2b2b;
+    border-bottom: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
     text-align: left;
     padding-top: 8px;
     padding-left: 10px;
     padding-bottom: 8px;
     vertical-align: middle;
 
-}
-
-.noselect {
-    user-select: none !important;
-    /* vertical-align: bottom;
-    color: grey;
-    font-size: .8em !important;
-    font-weight: bold; */
 }
 
 /*Stats grid*/
