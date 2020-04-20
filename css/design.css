@@ -1,5 +1,5 @@
 :root {
-    --html: #181818;
+    --html: #ffffff;
     --p: #ffffff;
     --h1: #FE0065;
     --h4: #FE0065;
@@ -7,7 +7,7 @@
 }
 
 [data-theme="dark"] {
-    --html: #9A97F3;
+    --html: #181818;
     --primary-color: #9A97F3;
     --secondary-color: #818cab;
     --font-color: #e1e1ff;
@@ -26,6 +26,9 @@ html {
 
 h1 {
     color: var(--h1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    text-align: center;
 }
 
 /*slider switch css */
@@ -92,10 +95,10 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 375px) {
     .theme-switch-wrapper {
 
-        left: 96%;
+        left: 90%;
 
     }
 }
