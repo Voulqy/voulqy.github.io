@@ -1,144 +1,145 @@
 <!DOCTYPE html>
-<html>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="css/design.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Coustard&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div class="theme-switch-wrapper">
-      <label class="theme-switch" for="checkbox">
-        <input type="checkbox" id="checkbox" />
-        <div class="slider round"></div>
-      </label>
+    <div class="button-wrapper">
+      <i
+        onclick="myFunction(this); sortListDir()"
+        class="fa fa-sort-alpha-asc"
+        style="font-size: 25px;"
+      ></i>
+      <!-- <i
+        onClick="sortListDir(); myFunction(this)"
+        class="fa fa-sort-alpha-asc"
+      ></i> -->
     </div>
+    <h1>Movies</h1>
 
-    <div id="mySidenav" class="sidenav">
-      <input
-        type="text"
-        id="mySearch"
-        onkeyup="myFunction()"
-        placeholder="Search..."
-        title="Type in a category"
-      />
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <ul id="myMenu">
-        <li><a class="alpha">A</a></li>
-        <li><a class="alphalink" href="html/ain.html">Ain</a></li>
-        <li><a class="alphalink" href="html/aokiji.html">Aokiji</a></li>
-        <li><a class="alpha">B</a></li>
-        <li><a class="alphalink" href="html/baccarat.html">Baccarat</a></li>
-        <li><a class="alphalink" href="html/bartolomeo.html">Bartolomeo</a></li>
-        <li><a class="alphalink" href="html/bege.html">Bege</a></li>
-        <li><a class="alphalink" href="#">Betty</a></li>
-        <li><a class="alphalink" href="html/bonney.html">Bonney</a></li>
-        <li><a class="alphalink" href="html/brook.html">Brook</a></li>
-        <li><a class="alphalink" href="html/buggy.html">Buggy</a></li>
-        <li><a class="alpha">C</a></li>
-        <li><a class="alphalink" href="html/caesar.html">Caesar</a></li>
-        <li><a class="alphalink" href="html/camie.html">Camie</a></li>
-        <li><a class="alphalink" href="html/carina.html">Carina</a></li>
-        <li><a class="alphalink" href="html/carrot.html">Carrot</a></li>
-        <li><a class="alphalink" href="html/chopper.html">Chopper</a></li>
-        <li><a class="alphalink" href="html/cindry.html">Cindry</a></li>
-        <li><a class="alphalink" href="html/conis.html">Conis</a></li>
-        <li><a class="alphalink" href="html/crocodile.html">Crocodile</a></li>
-        <li><a class="alphalink" href="html/custard.html">Custard</a></li>
-        <li><a class="alpha">D</a></li>
-        <li><a class="alphalink" href="html/doflamingo.html">Doflamingo</a></li>
-        <li><a class="alphalink" href="html/domino.html">Domino</a></li>
-        <li><a class="alphalink" href="html/douglas.html">Douglas</a></li>
-        <li><a class="alphalink" href="html/drake.html">Drake</a></li>
-        <li><a class="alpha">E</a></li>
-        <li><a class="alphalink" href="html/enel.html">Enel</a></li>
-        <li><a class="alphalink" href="html/eustass.html">Eustass</a></li>
-        <li><a class="alpha">F</a></li>
-        <li><a class="alphalink" href="html/franky.html">Franky</a></li>
-        <li><a class="alpha">G</a></li>
-        <li><a class="alphalink" href="html/galette.html">Galette</a></li>
-        <li><a class="alpha">H</a></li>
-        <li><a class="alphalink" href="html/hancock.html">Hancock</a></li>
-        <li><a class="alphalink" href="html/hawkins.html">Hawkins</a></li>
-        <li><a class="alpha">I</a></li>
-        <li><a class="alphalink" href="html/ichiji.html">Ichiji</a></li>
-        <li><a class="alpha">J</a></li>
-        <li><a class="alphalink" href="html/jinbe.html">Jinbe</a></li>
-        <li><a class="alpha">K</a></li>
-        <li><a class="alphalink" href="html/kalifa.html">Kalifa</a></li>
-        <li><a class="alphalink" href="html/katakuri.html">Katakuri</a></li>
-        <li><a class="alphalink" href="html/killer.html">Killer</a></li>
-        <li><a class="alphalink" href="html/koala.html">Koala</a></li>
-        <li><a class="alphalink" href="html/kuma.html">Kuma</a></li>
-        <li><a class="alpha">L</a></li>
-        <li><a class="alphalink" href="html/law.html">Law</a></li>
-        <li><a class="alphalink" href="html/lindbergh.html">Lindbergh</a></li>
-        <li><a class="alphalink" href="html/lucci.html">Lucci</a></li>
-        <li><a class="alphalink" href="html/luffy.html">Luffy</a></li>
-        <li><a class="alpha">M</a></li>
-        <li><a class="alphalink" href="html/marguerite.html">Marguerite</a></li>
-        <li><a class="alphalink" href="html/mikita.html">Mikita</a></li>
-        <li><a class="alphalink" href="html/monet.html">Monet</a></li>
-        <li><a class="alpha">N</a></li>
-        <li><a class="alphalink" href="#">Nami</a></li>
-        <li><a class="alphalink" href="html/niji.html">Niji</a></li>
-        <li><a class="alphalink" href="html/nojiko.html">Nojiko</a></li>
-        <li><a class="alpha">O</a></li>
-        <!-- <li><a href="html/.html"></a></li> -->
-        <li><a class="alpha">P</a></li>
-        <li><a class="alphalink" href="html/perona.html">Perona</a></li>
-        <li><a class="alphalink" href="html/pudding.html">Pudding</a></li>
-        <li><a class="alpha">Q</a></li>
-        <!-- <li><a href="html/.html"></a></li> -->
-        <li><a class="alpha">R</a></li>
-        <li><a class="alphalink" href="html/rebecca.html">Rebecca</a></li>
-        <li><a class="alphalink" href="html/reiju.html">Reiju</a></li>
-        <li><a class="alphalink" href="html/robin.html">Robin</a></li>
-        <li><a class="alpha">S</a></li>
-        <li><a class="alphalink" href="html/sabo.html">Sabo</a></li>
-        <li><a class="alphalink" href="html/sadi.html">Sadi</a></li>
-        <li><a class="alphalink" href="html/sanji.html">Sanji</a></li>
-        <li><a class="alphalink" href="html/shiki.html">Shiki</a></li>
-        <li><a class="alphalink" href="html/smoker.html">Smoker</a></li>
-        <li><a class="alphalink" href="html/smoothie.html">Smoothie</a></li>
-        <li><a class="alphalink" href="html/stussy.html">Stussu</a></li>
-        <li><a class="alpha">T</a></li>
-        <li><a class="alphalink" href="html/tashigi.html">Tashigi</a></li>
-        <li><a class="alpha">U</a></li>
-        <li><a class="alphalink" href="html/usopp.html">Usopp</a></li>
-        <li><a class="alpha">V</a></li>
-        <li><a class="alphalink" href="html/viola.html">Viola</a></li>
-        <li><a class="alphalink" href="html/vivi.html">Vivi</a></li>
-        <li><a class="alpha">W</a></li>
-        <!-- <li><a href="html/.html"></a></li> -->
-        <li><a class="alpha">X</a></li>
-        <!-- <li><a href="html/.html"></a></li> -->
-        <li><a class="alpha">Y</a></li>
-        <!-- <li><a href="html/.html"></a></li> -->
-        <li><a class="alpha">Z</a></li>
-        <li><a class="alphalink" href="html/zoro.html">Zoro</a></li>
-      </ul>
-    </div>
+    <ul id="id01">
+      <div class="content-grid">
+        <li>
+          <img src="img/movies/1917.jpg" alt="" />
+          <p>1917</p>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </li>
+        <li>
+          <img src="img/movies/Avengers Endgame.jpg" alt="" />
+          <p>Avengers Endgame</p>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </li>
+        <li>
+          <img src="img/movies/Birds of Prey.jpg" alt="" />
+          <p>Birds of Prey</p>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </li>
+        <li>
+          <img src="img/movies/Ford v Ferrari.jpg" alt="" />
+          <p>Ford v Ferrari</p>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </li>
+        <li>
+          <img src="img/movies/HTTYD - The Hidden World.jpg" alt="" />
+          <p>How To Train Your Dragon: The Hidden World</p>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </li>
+        <li>
+          <img src="img/movies/Joker.jpg" alt="" />
+          <p>Joker</p>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </li>
+        <li>
+          <img src="img/movies/Knives Out.jpg" alt="" />
+          <p>Knives Out</p>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </li>
+        <li>
+          <img src="img/movies/Once Upon a Time in Hollywood.jpg" alt="" />
+          <p>Once Upon a Time... in Hollywood</p>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </li>
+        <li>
+          <img src="img/movies/Parasite.jpg" alt="" />
+          <p>Parasite</p>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </li>
+        <li>
+          <img src="img/movies/Spider-Man - Far From Home.jpg" alt="" />
+          <p>Spider-Man: Far From Home</p>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </li>
+        <li>
+          <img src="img/movies/The Invisible Man.jpg" alt="" />
+          <p>The Invisible Man</p>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </li>
+        <li>
+          <img src="img/movies/Toy Story 4.jpg" alt="" />
+          <p>Toy Story 4</p>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </li>
+        <li>
+          <img src="img/movies/Us.jpg" alt="" />
+          <p>Us</p>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </li>
+      </div>
+    </ul>
 
-    <div id="main">
-      <span onclick="openNav()">
-        &#9776;
-      </span>
-    </div>
-    <h1 id="index">SAMPLE</h1>
-    <script src="js/scripts.js"></script>
+    <!-- <ul id="id01">
+      <li>Oslo</li>
+      <li>Stockholm</li>
+      <li>Helsinki</li>
+      <li>Berlin</li>
+      <li>Rome</li>
+      <li>Madrid</li>
+    </ul> -->
+    <script src="ladyload.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
