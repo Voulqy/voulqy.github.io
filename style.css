@@ -19,6 +19,10 @@ h1 {
   margin-bottom: 0;
 }
 
+h4 {
+  margin-bottom: 0;
+}
+
 img {
   width: 167px;
   height: 264px;
@@ -26,7 +30,9 @@ img {
   /* display: block; */
 }
 
-
+t {
+  padding-left: 1px;
+}
 
 .content-grid {
   display: grid;
@@ -60,6 +66,11 @@ i {
   padding-bottom: 1em;
 }
 
+#t {
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
 button {
   background-color: #181818;
   color: white;
@@ -91,12 +102,6 @@ i.fa fa-sort:hover {
   margin: 0;
   cursor: pointer;
 } */
-
-.fa {
-  font-size: 50px;
-  cursor: pointer;
-  user-select: none;
-}
 
 @media only screen and (min-width: 1024px) {
   .content-grid {
