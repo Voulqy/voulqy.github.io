@@ -1,0 +1,71 @@
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #181818;
+    color: white;
+}
+
+.chapterBox {
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    font-size: 25px;
+}
+
+.MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    border-top-color: currentcolor;
+    border-right-color: currentcolor;
+    border-bottom-color: currentcolor;
+    border-left-color: currentcolor;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    outline-color: currentcolor;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    text-decoration-color: currentcolor;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+* {
+    scrollbar-color: #202324 #454a4d;
+}
+
+
+.chapterNum {
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+
+}
+
+.boxAlign {
+    display: flex;
+    padding-right: 16px;
+    flex-direction: row;
+    width: 95%;
+
+    border-bottom: 1px solid rgb(225, 225, 225);
+    border-width: 0px 0px 5px;
+    border-style: solid;
+    border-bottom-color: #383d40;
+}
