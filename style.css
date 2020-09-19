@@ -34,3 +34,43 @@ img {
   flex: 1 0 0%;
   flex-direction: column;
 }
+
+.previous.start {
+  background-color: #202324;
+  color: #383838;
+}
+
+.next,
+.previous {
+  background-color: #006dfb;
+}
+
+.next:hover,
+.previous:hover {
+  cursor: pointer;
+  background-color: #0357c5;
+
+}
+
+.previous.start:hover {
+  cursor: default;
+  background-color: #202324;
+}
+
+.next,
+.previous {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 26px;
+  width: 77px;
+  height: 46px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.navigationButtons {
+  display: table;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
