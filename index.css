@@ -1,5 +1,6 @@
 html {
-    font-family: "Montserrat", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
 }
 
 body {
@@ -7,16 +8,13 @@ body {
     color: white;
 }
 
-.chapterBox {
+/* .chapterBox {
     display: flex;
     flex-direction: column;
-}
+} */
 
-html {
-    font-size: 25px;
-}
 
-.MuiButtonBase-root {
+/* .MuiButtonBase-root {
     color: inherit;
     border: 0;
     border-top-color: currentcolor;
@@ -41,13 +39,13 @@ html {
     background-color: transparent;
     -webkit-appearance: none;
     -webkit-tap-highlight-color: transparent;
-}
+} */
 
 * {
     scrollbar-color: #202324 #454a4d;
 }
 
-
+/* 
 .chapterNum {
 
     overflow: hidden;
@@ -62,10 +60,38 @@ html {
     display: flex;
     padding-right: 16px;
     flex-direction: row;
-    width: 95%;
+    width: 200px;
+    height: 200px;
 
     border-bottom: 1px solid rgb(225, 225, 225);
     border-width: 0px 0px 5px;
     border-style: solid;
     border-bottom-color: #383d40;
+} */
+
+button {
+    width: 135px;
+    height: 135px;
+    background-color: #282828;
+    border: none;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 7px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #363636;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 15px;
 }
